@@ -1,0 +1,81 @@
+<div class="container logo-container">
+  <img src="http://night.coffee/pokemon/pokemon_logo.png" class="img-responsive">
+</div>
+<div class="container">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">EV Calculator</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-2">
+          <form method="get" action="">
+            <div class="row" id="target_evs_container">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">Target EVs</label>
+                  <div class="controls">
+                    <input type="number" class="input-sm" name="target_evs" id="target_evs" placeholder="(1-252)" min="1" max="252" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="ev_per_pokemon_container">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">EVs per Pokémon</label>
+                  <div class="controls">
+                    <input type="number" class="input-sm" name="ev_per_pokemon" id="ev_per_pokemon" placeholder="(1-5)" min="1" max="5" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="pokerus_container">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">Pokérus?</label>
+                  <div class="controls">
+                    <label class="radio-inline"><input type="radio" name="pokerus" value="true"> Yes</label>
+                    <label class="radio-inline"><input type="radio" name="pokerus" value="false"> No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="power_items_container">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">Power Items?</label>
+                  <div class="controls">
+                    <label class="radio-inline"><input type="radio" name="power_items" value="true"> Yes</label>
+                    <label class="radio-inline"><input type="radio" name="power_items" value="false"> No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="macho_brace_container">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="control-label">Macho Brace?</label>
+                  <div class="controls">
+                    <label class="radio-inline"><input type="radio" name="macho_brace" value="true"> Yes</label>
+                    <label class="radio-inline"><input type="radio" name="macho_brace" value="false"> No</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-10">
+          <div class="panel panel-info results-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Results</h3>
+            </div>
+            <div class="panel-body">
+              Results go here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
