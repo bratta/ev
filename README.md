@@ -1,5 +1,7 @@
 # Pokémon EV Calculator
 
+### [Live demo](http://night.coffee/pokemon/ev/)
+
 This app is a client-side JS website for quickly calculating the number
 of Pokémon you must defeat in order to train your target Pokémon with
 the specified number of effort values. It takes into account the number
