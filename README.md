@@ -1,12 +1,13 @@
-# Pokémon EV Calculator
+# Pokémon Portal and EV Calculator
 
 ### [Live demo](http://pokemon.night.coffee/)
 
-This app is a client-side JS website for quickly calculating the number
-of Pokémon you must defeat in order to train your target Pokémon with
-the specified number of effort values. It takes into account the number
-of EVs issued per Pokémon, whether or not you have the Pokérus virus,
-and if you are holding a Power Item or the Macho Brace.
+This app is a client-side JS website for Pokémon-related things, such as
+quickly calculating the number of Pokémon you must defeat in order to
+train your target Pokémon with the specified number of effort values.
+It takes into account the number of EVs issued per Pokémon, whether or
+not you have the Pokérus virus, and if you are holding a Power Item or
+the Macho Brace.
 
 It will tell you the number of hordes you must fight, the number of
 individual Pokémon, and the number of individual Pokémon you must fight
