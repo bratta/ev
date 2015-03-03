@@ -1,13 +1,13 @@
 Controller = require 'controllers/base/controller'
 HeaderView = require 'views/header/header-view'
-HomePageView = require 'views/home/home-page-view'
+EvView = require 'views/ev/ev-view'
 Options = require 'models/options'
 
-module.exports = class HomeController extends Controller
+module.exports = class EvController extends Controller
   beforeAction: ->
     super
     @reuse 'header', HeaderView, region: 'header'
 
   index: ->
     @model = new Options()
-    @view = new HomePageView region: 'main', model: @model
+    @view = new EvView region: 'main', model: @model

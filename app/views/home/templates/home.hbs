@@ -1,81 +1,165 @@
 <div class="container logo-container">
-  <img src="http://night.coffee/pokemon/pokemon_logo.png" class="img-responsive">
+  <img src="images/pokemon_logo.png" class="img-responsive" />
 </div>
+<div class="container">
+  <div class="row">
+    <div id="slot1" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="0" data-trigger="focus" data-placement="top" data-toggle="popover" title="Yolandi">
+        <img src="http://pokemon.night.coffee/icons/shiny/lopunny.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Yolandi (Lopunny-Mega) (F) @ Lopunnite</p>
+        <p>Ability: Scrappy</p>
+        <p>Shiny: Yes</p>
+        <p>EVs: 252 HP / 4 Atk / 252 Spe</p>
+        <p>Jolly Nature</p>
+        <ul>
+          <li>High Jump Kick</li>
+          <li>Fake Out</li>
+          <li>Return</li>
+          <li>Ice Punch</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slot2" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="1" data-trigger="focus" data-placement="top" data-toggle="popover" title="Echo">
+        <img src="http://pokemon.night.coffee/icons/normal/gliscor.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Echo (Gliscor) (F) @ Toxic Orb</p>
+        <p>Ability: Poison Heal</p>
+        <p>Shiny: No</p>
+        <p>EVs: 252 HP / 184 Def / 72 Spe</p>
+        <p>Impish Nature</p>
+        <ul>
+          <li>Substitute</li>
+          <li>Protect</li>
+          <li>Earthquake</li>
+          <li>Toxic</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slot3" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="2" data-trigger="focus" data-placement="top" data-toggle="popover" title="Heatran">
+        <img src="http://pokemon.night.coffee/icons/shiny/heatran.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Heatran (M) @ Air Balloon</p>
+        <p>Ability: Flash Fire</p>
+        <p>Shiny: Yes</p>
+        <p>EVs: 12 HP / 252 SpA / 244 Spe</p>
+        <p>Timid Nature</p>
+        <ul>
+          <li>Stealth Rock</li>
+          <li>Lava Plume</li>
+          <li>Taunt</li>
+          <li>Earth Power</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slot4" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="3" data-trigger="focus" data-placement="top" data-toggle="popover" title="Ciara">
+        <img src="http://pokemon.night.coffee/icons/normal/chansey.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Ciara (Chansey) (F) @ Eviolite</p>
+        <p>Ability: Natural Cure</p>
+        <p>Shiny: No</p>
+        <p>EVs: 252 Def / 252 SpD / 4 Spe</p>
+        <p>Bold Nature</p>
+        <ul>
+          <li>Toxic</li>
+          <li>Seismic Toss</li>
+          <li>Soft-Boiled</li>
+          <li>Heal Bell</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slot5" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="4" data-trigger="focus" data-placement="top" data-toggle="popover" title="Knives">
+        <img src="http://pokemon.night.coffee/icons/shiny/bisharp.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Knives (Bisharp) @ Life Orb</p>
+        <p>Ability: Defiant</p>
+        <p>Shiny: Yes</p>
+        <p>EVs: 4HP / 252 Atk / 252 Spe</p>
+        <p>Adamant Nature</p>
+        <ul>
+          <li>Knock Off</li>
+          <li>Sucker Punch</li>
+          <li>Iron Head</li>
+          <li>Protect</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slot6" class="slot col-md-2">
+      <a href="javascript:void(0);" tabindex="5" data-trigger="focus" data-placement="top" data-toggle="popover" title="Siobhan">
+        <img src="http://pokemon.night.coffee/icons/shiny/milotic.gif">
+      </a>
+      <div class="slot-content hide">
+        <p>Siobhan (Milotic) @ Leftovers</p>
+        <p>Ability: Marvel Scale</p>
+        <p>Shiny: Yes</p>
+        <p>EVs: 252 HP / 8 Def / 242 SpA</p>
+        <p>Calm Nature</p>
+        <ul>
+          <li>Recover</li>
+          <li>Protect</li>
+          <li>Scald</li>
+          <li>Dragon Tail</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="panel panel-success">
     <div class="panel-heading">
-      <h3 class="panel-title">EV Calculator</h3>
+      <h3 class="panel-title">Trainer Info</h3>
     </div>
     <div class="panel-body">
       <div class="row">
         <div class="col-md-2">
-          <form method="get" action="">
-            <div class="row" id="target_evs_container">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label class="control-label">Target EVs</label>
-                  <div class="controls">
-                    <input type="number" class="input-sm" name="target_evs" id="target_evs" placeholder="(1-252)" min="1" max="252" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="ev_per_pokemon_container">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label class="control-label">EVs per Pokémon</label>
-                  <div class="controls">
-                    <input type="number" class="input-sm" name="ev_per_pokemon" id="ev_per_pokemon" placeholder="(1-5)" min="1" max="5" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="pokerus_container">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label class="control-label">Pokérus?</label>
-                  <div class="controls">
-                    <label class="radio-inline"><input type="radio" name="pokerus" value="true"> Yes</label>
-                    <label class="radio-inline"><input type="radio" name="pokerus" value="false"> No</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="power_items_container">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label class="control-label">Power Items?</label>
-                  <div class="controls">
-                    <label class="radio-inline"><input type="radio" name="power_items" value="true"> Yes</label>
-                    <label class="radio-inline"><input type="radio" name="power_items" value="false"> No</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" id="macho_brace_container">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label class="control-label">Macho Brace?</label>
-                  <div class="controls">
-                    <label class="radio-inline"><input type="radio" name="macho_brace" value="true"> Yes</label>
-                    <label class="radio-inline"><input type="radio" name="macho_brace" value="false"> No</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+          <img src="images/brendan.png" class="img-responsive">
         </div>
-        <div class="col-md-10">
-          <div class="panel panel-info results-panel">
-            <div class="panel-heading">
-              <h3 class="panel-title">Results</h3>
-            </div>
-            <div class="panel-body">
-              Results go here
-            </div>
-          </div>
+        <div class="col-md-7">
+          <h3><strong>Twitch:</strong> <a href="http://www.twitch.tv/docbratta/profile">docbratta</a></h3>
+          <h3><strong>IGN:</strong> Vash</h3>
+          <h3><strong>Friend Code:</strong> 0748-2209-9054</h3>
+          <h3><strong>Secret Base:</strong> Route 111; Requires the Mach Bike and goggles. Go up the sandly slope in the area with the sandstorm.</h3>
+        </div>
+        <div class="col-md-3">
+          <img src="images/secretbase.png" class="qr-code" />
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Notes from the Trainer</h3>
+    </div>
+    <div class="panel-body">
+
+      Currently I have plans to breed a competitive Volcarona, Hydreigon, and Salemence. After that, potentially a Kangaskhan. I'm also
+      Wonder Trading all my 5-6 IV breedjects as well as special Pokémon in various streams on Twitch.TV.
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    html: true,
+    content: function() {
+      return $(this).next('.slot-content').html();
+    }
+  });
+})
+</script>

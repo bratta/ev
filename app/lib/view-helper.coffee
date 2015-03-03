@@ -26,3 +26,6 @@ register 'without', (context, options) ->
 # Get Chaplin-declared named routes. {{url "likes#show" "105"}}
 register 'url', (routeName, params..., options) ->
   utils.reverse routeName, params
+
+register 'link_to', (displayName, routeName, params..., options) ->
+  new Handlebars.SafeString "<a href='#{utils.reverse routeName, params}'>#{displayName}</a>"
